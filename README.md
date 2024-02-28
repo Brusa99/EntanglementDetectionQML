@@ -1,4 +1,4 @@
-# EntanglementDetectionQML
+# EntanglementDetectionQML ⚛🤖
 
 Collection of notebooks for experiments in the use of (Quantum) Machine Learning for entanglement detection.  
 This repository is part of the project for the exam of _Advanced Quantum Mechanics_ @ units 2023/24.
