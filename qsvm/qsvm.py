@@ -1,12 +1,8 @@
 import numpy as np
 import pandas as pd
-import matplotlib.pyplot as plt
-
-from imblearn.under_sampling import RandomUnderSampler
+from matplotlib import pyplot as plt
 
 from sklearn import svm
-from sklearn.model_selection import train_test_split
-from sklearn.linear_model import LogisticRegression
 
 from qiskit.circuit.library import PauliFeatureMap
 from qiskit import QuantumCircuit
@@ -16,7 +12,6 @@ from qiskit_algorithms.state_fidelities import ComputeUncompute, BaseStateFideli
 from qiskit_machine_learning.kernels import FidelityQuantumKernel
 
 from typing import Optional, Tuple
-import time
 
 
 def get_feature_map(n_features: int,
@@ -288,4 +283,26 @@ def train_test(X_train: pd.DataFrame,
 
     # return the trained model
     return model, score
+
+
+# plot functions
+
+def plot_results(features, times, accuracy):
+    # plot on the same figure the time and the accuracy
+    fig, ax1 = plt.subplots()
+
+    color = 'tab:red'
+    ax1.set_xlabel('Features')
+    ax1.set_ylabel('Time (s)', color=color)
+    ax1.plot(features, times, color=color)
+    ax1.tick_params(axis='y', labelcolor=color)
+
+    ax2 = ax1.twinx()  # instantiate a second axes that shares the same x-axis
+    color = 'tab:blue'
+    ax2.set_ylabel('Accuracy (%)', color=color)  # we already handled the x-label with ax1
+    ax2.plot(features, accuracy, color=color)
+    ax2.tick_params(axis='y', labelcolor=color)
+
+    fig.tight_layout()  # otherwise the right y-label is slightly clipped
+    plt.show()
 
