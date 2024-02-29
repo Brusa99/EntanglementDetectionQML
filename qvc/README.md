@@ -5,8 +5,9 @@ A VQC is usally composed of three different part: the first part is related to t
 ## `qvc_haar_obs.ipynb`
 This is out main test reagardin QVC, and the one which yelds better results. The dataset we are working with the dataset generated from the observables of a quantum state (`ds_haar_obs.csv`). 
 The embedding of the data is done using the template `AngleEmbedding()` from pennylane in where it encodes $n$ features into the rotation angles of $n$ qubits. The template `StronglyEntangledLayers()` is used as our varational part of the circuit, and a exemple of the circuit for 3 features can be seen below:
-![Circuit](../images/qvc.png)
-For the output of the circuit we measure the expectation values of $\sigma_z$ of the first wire.
+<p align="center">
+  <img src="https://github.com/Brusa99/EntanglementDetectionQML/blob/main/images/qvc.png">
+</p>For the output of the circuit we measure the expectation values of $\sigma_z$ of the first wire.
 The optimization algorithm used is Adam with the hinge loss as our cost function. In the other notebooks different optimization algorithms and cost function were used as: COBYLA and the cross entropy.
 
 #### Other notebooks
