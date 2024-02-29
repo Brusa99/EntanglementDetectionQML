@@ -50,16 +50,10 @@ The datasets `ds_haar_obs.csv` and `ds_mixed_obs.csv` are obtained by applying c
 The collective measurements are the same used in [2].
 Each feature is the probability of successfully projecting onto a singlet Bell state, given a particular pair of local projections.
 This is represented by the equation
-$$
-    P_{x,y} =
-    \frac{
-        Tr[(\hat\rho_T) (\hat\Pi_x \otimes \hat\Pi_{Bell} \otimes \hat\Pi_y)]
-    }{
-        Tr[(\hat\rho_T) (\hat\Pi_x \otimes \hatI \otimes  \hat\Pi_y)]
-    }
-$$
+![equation](images/equation.png)
 
-Where $\Pi_x$ and $\Pi_y$ are the local projectors, $\Pi_{Bell}$ is the singlet Bell state projector, and $\rho_T = \rhp \otime \rho$ is the state to be measured.
+
+Where $\Pi_x$ and $\Pi_y$ are the local projectors, $\Pi_{Bell}$ is the singlet Bell state projector, and $\rho_T = \rho \otimes \rho$ is the state to be measured.
 The projectors are defined as
 ![projections](images/projections.png)
 
