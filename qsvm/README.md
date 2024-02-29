@@ -9,7 +9,7 @@ A _support vector machine_ (SVM) is a machine learning method for classification
 The idea is to find a hyperplane that separates the data based on the label.
 The hyperplane is required to be the most far away from the data as possible, _maximizing the margin_.
 
-<img src="../images/SVM_margin.png" alt="svm sep">
+<img src="../images/SVM_margin.png" alt="svm sep" width="300" height="300">
 
 Effectiveness of the SVM depends on the data distribution as the data may not be linearly separable.
 To avoid this problem the **kernel trick** is employed.
