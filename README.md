@@ -20,6 +20,7 @@ More detailed information is contained in each subdirectory `README.md`.
 - `qsvm/` Contains various notebooks that use _Quantum Support Vector Machines_ to classify the data.
 - `qvc/` Contains notebooks using _Quantum Variational Circuits_ like _Quantum Neural Networks_, _HybridNNs_Classifiers and _Quantum Convolutional NNs_.
 - `classic/` Contains notebook that use non-quantum ML techniques.
+- `images/` Contains images for the readmes.
 
 
 ## Goal and Motivation
