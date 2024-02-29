@@ -9,14 +9,14 @@ A _support vector machine_ (SVM) is a machine learning method for classification
 The idea is to find a hyperplane that separates the data based on the label.
 The hyperplane is required to be the most far away from the data as possible, _maximizing the margin_.
 
-<img src="https://example.com/image.jpg](https://en.wikipedia.org/wiki/Support_vector_machine#/media/File:SVM_margin.png" alt="svm sep">
+<img src="../images/SVM_margin.png" alt="svm sep">
 
 Effectiveness of the SVM depends on the data distribution as the data may not be linearly separable.
 To avoid this problem the **kernel trick** is employed.
 Data is trasformed with a mapping $\phi$ to a space where the it is linearly separable.
 The kernel function is given by $k(x_i, x_j) = \langle \phi(x_i), \phi(x_j) \rangle$
 
-<img src="[[https://example.com/image.jpg](https://en.wikipedia.org/wiki/Support_vector_machine#/media/File:SVM_margin.png)](https://en.wikipedia.org/wiki/Support_vector_machine#/media/File:Kernel_trick_idea.svg)" alt="mapping">
+<img src="../images/Kernel_trick_idea.svg.png" alt="mapping">
 
 The trick consists in the fact that the actual mapping $\phi$ is not explicitely required (under certain conditions),
 as is can be implicitely defined by $k$.
