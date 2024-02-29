@@ -10,7 +10,7 @@ The embedding of the data is done using the template `AngleEmbedding()` from pen
 </p>For the output of the circuit we measure the expectation values of $\sigma_z$ of the first wire.
 The optimization algorithm used is Adam with the hinge loss as our cost function. In the other notebooks different optimization algorithms and cost function were used as: COBYLA and the cross entropy.
 
-#### Other notebooks
+### Other notebooks
 Other test done using different algorithms are in the following notebooks:
 - `qvc_mixed_obs.ipynb` A very similar notebook to the main one, this one uses a different dataset containing observable generated from mixed states. 
 - `qvc_haar_stat.ipynb` In this notebook we implement an idea in which we load in the quantum circuit the state of an exemple and with a QVC we try to detect if the state is separable or not. The results are not great.
