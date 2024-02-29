@@ -37,3 +37,4 @@ For example as $k(x_i, x_j) = \left| \langle \phi(x_i) | \phi(x_j) \rangle \righ
 - `qsvm.py` contains the functions used in the main notebook.
 - `qsvm_haar_obs_penny.ipynb` is an implementation of the algorithm using _pennylane_.
 - `qsvm_mixed_obs.ipynb` applies the method to the mixed states
+- `qsvm_haar_state.ipynb` applies the method directly to the statevectors, without using feature maps.
