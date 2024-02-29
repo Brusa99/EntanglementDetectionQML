@@ -15,5 +15,5 @@ Other test done using different algorithms are in the following notebooks:
 - `qvc_mixed_obs.ipynb` A very similar notebook to the main one, this one uses a different dataset containing observable generated from mixed states. 
 - `qvc_haar_stat.ipynb` In this notebook we implement an idea in which we load in the quantum circuit the state of an exemple and with a QVC we try to detect if the state is separable or not. The results are not great.
 - `hybrid_qnn_obs.ipynb` A notebook implementing a hybrid neural network for the observables dataset. We didn't manage good results. 
-- `qcnn.ipynb` An implementation of a quantum convolutional neural network for the observable dataset. Even here the results are good.
+- `qcnn.ipynb` An implementation of a quantum convolutional neural network for the observable dataset. Even here the results are not good.
 
