@@ -1,4 +1,8 @@
-Hybrid_QNN_obs.ipynb : These notebook contains the implementation of an hybrid approach to Mmachine learning, 
+# Quantum variational classifiers
+This directory contains various QVC algorithms that we used for the entanglement detection task.
+
+
+- `Hybrid_QNN_obs.ipynb` : These notebook contains the implementation of an hybrid approach to Mmachine learning, 
   where a quantum variational layer is connected to some previous classical layer.
   Finally a classical output layer returns the outcome of the whole neural network.
 
